@@ -1,9 +1,28 @@
 ﻿namespace MP_KT5_2025;
 
-class Program
+public static class Program
 {
-    static void Main(string[] args)
+    private static void TestAnimals()
     {
-        Console.WriteLine("Hello, World!");
+    }
+
+    private static void TestShapes()
+    {
+    }
+
+    private static void TestComparables()
+    {
+    }
+
+    private static void RunTests()
+    {
+        TestAnimals();
+        TestShapes();
+        TestComparables();
+    }
+
+    public static void Main(string[] _)
+    {
+        RunTests();
     }
 }
