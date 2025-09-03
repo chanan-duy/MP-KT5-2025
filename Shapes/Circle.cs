@@ -6,6 +6,11 @@ public class Circle : IShape
 
     public Circle(double radius)
     {
+        if (radius < 0)
+        {
+            throw new Exception("Radius can't be negative");
+        }
+
         Radius = radius;
     }
 

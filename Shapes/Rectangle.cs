@@ -7,6 +7,16 @@ public class Rectangle : IShape
 
     public Rectangle(double width, double height)
     {
+        if (width < 0)
+        {
+            throw new Exception("Width can't be negative");
+        }
+
+        if (height < 0)
+        {
+            throw new Exception("Height can't be negative");
+        }
+
         Width = width;
         Height = height;
     }
