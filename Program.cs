@@ -2,8 +2,18 @@
 
 public static class Program
 {
+    private static void TestAnimal(IAnimal animal)
+    {
+        Console.WriteLine($"{animal.Name} - {animal.MakeSound()}");
+    }
+
     private static void TestAnimals()
     {
+        var dog = new Dog();
+        var cat = new Cat();
+
+        TestAnimal(dog);
+        TestAnimal(cat);
     }
 
     private static void TestShapes()
