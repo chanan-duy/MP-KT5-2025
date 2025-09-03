@@ -33,6 +33,15 @@ public class Triangle : IShape
         C = c;
     }
 
-    public double Area { get; }
+    public double Area
+    {
+        get
+        {
+            var halfPerimeter = (A + B + C) / 2;
+            var area = Math.Sqrt(halfPerimeter * (halfPerimeter - A) * (halfPerimeter - B) * (halfPerimeter - C));
+            return area;
+        }
+    }
+
     public double Perimeter => A + B + C;
 }
